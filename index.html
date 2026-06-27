@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xtreme Mobile Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=20260530c">
+  <style>
+    @media (max-width: 768px) {
+      #hero .container.hero-content {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+      }
+
+      #hero .hero-btns {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      #hero .hero-btns .btn {
+        width: min(100%, 320px) !important;
+        max-width: 320px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        justify-content: center !important;
+        white-space: normal !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #hero .container.hero-content {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      #hero .hero-btns .btn {
+        width: min(100%, 296px) !important;
+        max-width: 296px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="page-loader">
+    <div class="loader-logo">XMI</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <header id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">X</div>
+        <div class="logo-text">
+          <div class="name">Xtreme Mobile Inc.</div>
+          <div class="tagline">Conectividad y Accesorios</div>
+        </div>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a class="nav-link active" href="#hero">Inicio</a>
+        <a class="nav-link" href="#about">Nosotros</a>
+        <a class="nav-link" href="#why-us">Ventajas</a>
+        <a class="nav-link" href="#services">Servicios</a>
+        <a class="nav-link" href="#status-check">Estado</a>
+        <a class="nav-link" href="#offers">Ofertas</a>
+        <a class="nav-link" href="#reviews">Resenas</a>
+        <a class="nav-link" href="#contact">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-admin-link" href="login.html">Panel Admin</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="reveal">
+          <div class="hero-badge">Soporte movil en Barranquitas</div>
+          <h1 class="hero-title">Tecnologia, accesorios y <span>solicitudes Lifeline</span> en un solo lugar</h1>
+          <p class="hero-subtitle">Te ayudamos con telefonos gratis elegibles, activaciones, accesorios y atencion rapida para que salgas conectado el mismo dia.</p>
+          <div class="hero-btns">
+            <button class="btn btn-primary btn-lg" data-open-form><i class="fas fa-file-signature"></i> Solicitar telefono gratis</button>
+            <button class="btn btn-whatsapp btn-lg" data-whatsapp="Hola, quiero orientacion sobre telefonos gratis y servicios disponibles."><i class="fab fa-whatsapp"></i> Escribir por WhatsApp</button>
+          </div>
+          <div class="hero-info">
+            <div class="hero-info-item"><i class="fas fa-location-dot"></i><span>Plaza San Cristobal, Barranquitas, Puerto Rico</span></div>
+            <div class="hero-info-item"><i class="fas fa-phone"></i><span>787-205-2220</span></div>
+            <div class="hero-info-item"><i class="fas fa-clock"></i><span>Horario: 8:00 - 17:30</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-phone-mock">
+            <div class="phone-screen">
+              <div class="phone-glow"></div>
+              <div class="phone-logo">XTREME</div>
+              <div class="phone-tagline">Mobile Inc.</div>
+              <button class="btn btn-primary btn-sm" data-open-form>Comenzar solicitud</button>
+            </div>
+          </div>
+          <div class="hero-float-card card-1">
+            <div class="float-card-icon"><i class="fas fa-sim-card" style="color:#FF1A3A"></i></div>
+            <div class="float-card-num">+100</div>
+            <div class="float-card-label">Solicitudes asistidas</div>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="float-card-icon"><i class="fas fa-star" style="color:#FFB300"></i></div>
+            <div class="float-card-num">4.9/5</div>
+            <div class="float-card-label">Clientes satisfechos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item"><div class="stat-num" data-count="500" data-suffix="+">0</div><div class="stat-label">Clientes atendidos</div></div>
+          <div class="stat-item"><div class="stat-num" data-count="100" data-suffix="+">0</div><div class="stat-label">Solicitudes guiadas</div></div>
+          <div class="stat-item"><div class="stat-num" data-count="50" data-suffix="+">0</div><div class="stat-label">Accesorios en tienda</div></div>
+          <div class="stat-item"><div class="stat-num" data-count="5">0</div><div class="stat-label">Anos sirviendo</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-main-card">
+            <div class="about-card-icon"><i class="fas fa-mobile-screen"></i></div>
+            <h3>Conectamos personas con soluciones reales</h3>
+            <p>Combinamos orientacion clara, accesorios confiables y servicio cercano para que cada cliente encuentre la mejor opcion sin complicaciones.</p>
+            <div class="about-badge-row">
+              <div class="about-badge">Lifeline</div>
+              <div class="about-badge">Accesorios</div>
+              <div class="about-badge">Activaciones</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <div class="label section-header label">Quienes somos</div>
+          <h2>Atencion humana, proceso rapido y enfoque en resultados</h2>
+          <p>Xtreme Mobile Inc. trabaja para ofrecer soluciones moviles confiables, accesibles y rapidas. Acompana al cliente desde la orientacion inicial hasta la entrega final.</p>
+          <p>Nuestro enfoque mezcla servicio local, inventario practico y apoyo paso a paso para que todo el proceso sea claro y comodo.</p>
+          <div class="about-features">
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Asistencia personalizada</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Accesorios disponibles</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Seguimiento de solicitudes</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Servicio local confiable</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="label">Por que elegirnos</div>
+          <h2>Mas que una tienda, un punto de apoyo tecnologico</h2>
+          <p>Disenamos una experiencia practica para que resolver una necesidad movil no se convierta en un tramite pesado.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-bolt"></i></div><h3>Proceso agil</h3><p>Reducimos friccion y te guiamos paso a paso en cada gestion.</p></article>
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-user-shield"></i></div><h3>Orientacion clara</h3><p>Te explicamos requisitos, estado y siguientes pasos sin vueltas.</p></article>
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-box-open"></i></div><h3>Accesorios listos</h3><p>Covers, protectores, cargadores y mas en el mismo punto de atencion.</p></article>
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-heart"></i></div><h3>Trato cercano</h3><p>Servicio local con paciencia, respeto y enfoque en resolver.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="label">Servicios</div>
+          <h2>Lo que puedes resolver con nosotros</h2>
+          <p>Unimos tramites, venta y soporte para que no tengas que visitar varios lugares.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="why-grid services-grid">
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-gift"></i></div><h3>Telefono gratis elegible</h3><p>Apoyo completo para solicitudes bajo programas disponibles.</p></article>
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-plug"></i></div><h3>Activaciones y setup</h3><p>Configuracion basica, orientacion inicial y soporte para arrancar.</p></article>
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-shield-halved"></i></div><h3>Accesorios y proteccion</h3><p>Covers, protectores y cargadores para los modelos mas comunes.</p></article>
+          <article class="why-card reveal"><div class="why-icon"><i class="fas fa-headset"></i></div><h3>Atencion postventa</h3><p>Seguimiento y aclaracion de dudas sobre solicitudes y productos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="free-phone-cta" class="section text-center">
+      <div class="container reveal">
+        <div class="section-header">
+          <div class="label">Empieza hoy</div>
+          <h2>Solicita tu telefono gratis con ayuda guiada</h2>
+          <p>Llena el formulario desde aqui y continua el proceso con nuestro equipo.</p>
+        </div>
+        <button class="btn btn-primary btn-lg" data-open-form><i class="fas fa-file-circle-plus"></i> Abrir formulario</button>
+      </div>
+    </section>
+
+    <section id="status-check" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="label">Seguimiento</div>
+          <h2>Consulta el estado de tu solicitud</h2>
+          <p>Ingresa tu numero de solicitud y un dato de verificacion para ver el progreso.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="status-form-card reveal">
+          <form id="status-check-form" class="form-grid">
+            <div class="form-group full"><label class="form-label" for="check-num">Numero de solicitud</label><input class="form-input" id="check-num" placeholder="XMI-2026-0001"></div>
+            <div class="form-group full"><label class="form-label" for="check-verify">Telefono o fecha de nacimiento</label><input class="form-input" id="check-verify" placeholder="787-555-0101 o 1985-03-14"></div>
+            <div class="form-group full"><button class="btn btn-primary btn-block" type="submit"><i class="fas fa-magnifying-glass"></i> Consultar estado</button></div>
+          </form>
+          <div id="status-result"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="label">Promociones</div>
+          <h2>Ofertas activas</h2>
+          <p>Promociones, paquetes y oportunidades vigentes actualizadas desde el panel administrativo.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="offers-grid" id="offers-container"></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="label">Resenas</div>
+          <h2>Lo que dicen nuestros clientes</h2>
+          <p>Tu opinion tambien cuenta. Dejanos una resena y se publicara despues de revision.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="reviews-layout">
+          <aside class="review-form-card reveal">
+            <h3 style="margin-bottom:12px;color:var(--white)">Comparte tu experiencia</h3>
+            <form id="review-form" class="form-grid">
+              <div class="form-group full"><label class="form-label" for="review-name">Nombre</label><input class="form-input" id="review-name" placeholder="Tu nombre"></div>
+              <div class="form-group full">
+                <label class="form-label">Calificacion</label>
+                <div class="stars-input">
+                  <button type="button" class="star-btn" data-star="1">★</button>
+                  <button type="button" class="star-btn" data-star="2">★</button>
+                  <button type="button" class="star-btn" data-star="3">★</button>
+                  <button type="button" class="star-btn" data-star="4">★</button>
+                  <button type="button" class="star-btn" data-star="5">★</button>
+                </div>
+              </div>
+              <div class="form-group full"><label class="form-label" for="review-comment">Comentario</label><textarea class="form-textarea" id="review-comment" placeholder="Cuentanos como fue tu experiencia"></textarea></div>
+              <div class="form-group full"><button class="btn btn-primary btn-block" type="submit"><i class="fas fa-paper-plane"></i> Enviar resena</button></div>
+            </form>
+          </aside>
+          <div class="reviews-list reveal" id="reviews-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="label">Contacto</div>
+          <h2>Visitanos o escribenos</h2>
+          <p>Estamos listos para ayudarte con orientacion, solicitudes y accesorios.</p>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-location-dot"></i></div><div><div class="contact-label">Direccion</div><div class="contact-value">Plaza San Cristobal, Barranquitas, Puerto Rico</div></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><div class="contact-label">Telefono</div><div class="contact-value"><a href="tel:7872052220">787-205-2220</a></div></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><div class="contact-label">Correo</div><div class="contact-value"><a href="mailto:XMM90202@claropr.com">XMM90202@claropr.com</a></div></div></div>
+            <div class="social-btns">
+              <a class="social-btn instagram" href="https://www.instagram.com/xtremem0bile" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+              <a class="social-btn facebook" href="https://www.facebook.com/share/1HbDgezvSr/" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a>
+              <button class="social-btn whatsapp" data-whatsapp="Hola, deseo informacion sobre sus servicios."><i class="fab fa-whatsapp"></i> WhatsApp</button>
+            </div>
+          </div>
+          <div class="map-container reveal">
+            <iframe title="Mapa Xtreme Mobile Inc." src="https://www.google.com/maps?q=Barranquitas%20Puerto%20Rico&output=embed" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="nav-logo footer-logo">
+            <div class="logo-icon">X</div>
+            <div class="logo-text">
+              <div class="name">Xtreme Mobile Inc.</div>
+              <div class="tagline">Servicio local con enfoque humano</div>
+            </div>
+          </div>
+          <p class="footer-desc">Tecnologia movil, accesorios y apoyo en solicitudes con una experiencia clara, cercana y confiable.</p>
+        </div>
+        <div><div class="footer-heading">Navegacion</div><div class="footer-links"><a href="#about">Nosotros</a><a href="#services">Servicios</a><a href="#offers">Ofertas</a><a href="#contact">Contacto</a></div></div>
+        <div><div class="footer-heading">Soporte</div><div class="footer-links"><a href="#status-check">Ver estado</a><a href="login.html">Panel admin</a><a href="#reviews">Resenas</a></div></div>
+        <div><div class="footer-heading">Canales</div><div class="footer-links"><a href="tel:7872052220">787-205-2220</a><a href="mailto:XMM90202@claropr.com">Correo</a><a href="https://www.instagram.com/xtremem0bile" target="_blank" rel="noreferrer">Instagram</a></div></div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Xtreme Mobile Inc. Todos los derechos reservados.</div>
+        <div class="footer-tagline">Conectando soluciones moviles reales</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="form-modal" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Solicitud de Telefono Gratis</h3>
+        <button class="modal-close" type="button" data-close-modal><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="steps-bar">
+          <div class="step-item active"><div class="step-circle">1</div><div class="step-label">Solicitante</div></div>
+          <div class="step-item"><div class="step-line"></div><div class="step-circle">2</div><div class="step-label">Direccion</div></div>
+          <div class="step-item"><div class="step-line"></div><div class="step-circle">3</div><div class="step-label">Detalles</div></div>
+          <div class="step-item"><div class="step-line"></div><div class="step-circle">4</div><div class="step-label">Documentos</div></div>
+          <div class="step-item"><div class="step-line"></div><div class="step-circle">5</div><div class="step-label">Revision</div></div>
+          <div class="step-item"><div class="step-line"></div><div class="step-circle">6</div><div class="step-label">Enviado</div></div>
+        </div>
+        <form id="free-phone-form">
+          <section class="form-section active" id="step-1">
+            <div class="form-section-title"><i class="fas fa-user"></i> Informacion del solicitante</div>
+            <div class="privacy-notice"><i class="fas fa-shield-halved"></i><p>Tus datos se usan unicamente para procesar la solicitud y verificar elegibilidad.</p></div>
+            <div class="form-grid">
+              <div class="form-group"><label class="form-label" for="applicant-ssn">SSN <span class="req">*</span></label><input class="form-input" id="applicant-ssn" data-ssn placeholder="000-00-0000"></div>
+              <div class="form-group"><label class="form-label" for="applicant-dob">Fecha de nacimiento <span class="req">*</span></label><input class="form-input" id="applicant-dob" type="date"></div>
+              <div class="form-group"><label class="form-label" for="applicant-first">Nombre <span class="req">*</span></label><input class="form-input" id="applicant-first"></div>
+              <div class="form-group"><label class="form-label" for="applicant-last">Apellido <span class="req">*</span></label><input class="form-input" id="applicant-last"></div>
+              <div class="form-group"><label class="form-label" for="applicant-phone">Telefono <span class="req">*</span></label><input class="form-input" id="applicant-phone" data-phone placeholder="(787) 000-0000"></div>
+              <div class="form-group"><label class="form-label" for="service-date">Fecha de servicio <span class="req">*</span></label><input class="form-input" id="service-date" type="date"></div>
+            </div>
+            <div class="form-nav"><span></span><button class="btn btn-primary" type="button" id="step-next-1">Continuar <i class="fas fa-arrow-right"></i></button></div>
+          </section>
+          <section class="form-section" id="step-2">
+            <div class="form-section-title"><i class="fas fa-house"></i> Direccion residencial</div>
+            <div class="form-grid">
+              <div class="form-group full"><label class="form-label" for="address-line1">Direccion</label><input class="form-input" id="address-line1"></div>
+              <div class="form-group"><label class="form-label" for="address-town">Pueblo</label><select class="form-select" id="address-town" data-towns></select></div>
+              <div class="form-group"><label class="form-label" for="address-zip">Zip Code</label><input class="form-input" id="address-zip"></div>
+            </div>
+            <div id="same-address" class="form-group" style="margin-top:20px">
+              <label class="form-label">La direccion postal es la misma?</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="same-address" value="yes" checked> Si</label>
+                <label class="radio-option"><input type="radio" name="same-address" value="no"> No</label>
+              </div>
+            </div>
+            <div id="postal-fields" style="display:none;margin-top:20px">
+              <div class="form-grid">
+                <div class="form-group full"><label class="form-label" for="postal-line1">Direccion postal</label><input class="form-input" id="postal-line1"></div>
+                <div class="form-group"><label class="form-label" for="postal-town">Pueblo postal</label><select class="form-select" id="postal-town" data-towns></select></div>
+                <div class="form-group"><label class="form-label" for="postal-zip">Zip Code postal</label><input class="form-input" id="postal-zip"></div>
+              </div>
+            </div>
+            <div class="form-nav"><button class="btn btn-outline" type="button" data-prev-step="1"><i class="fas fa-arrow-left"></i> Atras</button><button class="btn btn-primary" type="button" id="step-next-2">Continuar <i class="fas fa-arrow-right"></i></button></div>
+          </section>
+          <section class="form-section" id="step-3">
+            <div class="form-section-title"><i class="fas fa-circle-info"></i> Informacion adicional</div>
+            <div id="has-dependent" class="form-group">
+              <label class="form-label">Tienes dependientes?</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="has-dependent" value="no" checked> No</label>
+                <label class="radio-option"><input type="radio" name="has-dependent" value="yes"> Si</label>
+              </div>
+            </div>
+            <div id="dependent-fields" style="display:none;margin-top:20px">
+              <div class="form-grid">
+                <div class="form-group"><label class="form-label" for="dependent-name">Nombre del dependiente</label><input class="form-input" id="dependent-name"></div>
+                <div class="form-group"><label class="form-label" for="dependent-relationship">Relacion</label><input class="form-input" id="dependent-relationship"></div>
+              </div>
+            </div>
+            <div class="form-grid" style="margin-top:20px"><div class="form-group full"><label class="form-label" for="eligibility-notes">Notas o detalles</label><textarea class="form-textarea" id="eligibility-notes" placeholder="Informacion adicional relevante para la solicitud"></textarea></div></div>
+            <div class="form-nav"><button class="btn btn-outline" type="button" data-prev-step="2"><i class="fas fa-arrow-left"></i> Atras</button><button class="btn btn-primary" type="button" id="step-next-3">Continuar <i class="fas fa-arrow-right"></i></button></div>
+          </section>
+          <section class="form-section" id="step-4">
+            <div class="form-section-title"><i class="fas fa-upload"></i> Documentos</div>
+            <div class="form-grid">
+              <div class="form-group full">
+                <label class="form-label">Tarjeta o evidencia de SSN</label>
+                <div class="file-upload-zone" id="ssn-upload">
+                  <input type="file" hidden accept=".jpg,.jpeg,.png,.pdf">
+                  <i class="fas fa-cloud-arrow-up"></i>
+                  <p>Haz clic o arrastra un archivo. <span>JPG, PNG o PDF</span></p>
+                </div>
+                <div class="file-previews" id="ssn-previews"></div>
+              </div>
+              <div class="form-group full">
+                <label class="form-label">Identificacion valida</label>
+                <div class="file-upload-zone" id="id-upload">
+                  <input type="file" hidden accept=".jpg,.jpeg,.png,.pdf">
+                  <i class="fas fa-id-card"></i>
+                  <p>Sube tu identificacion. <span>JPG, PNG o PDF</span></p>
+                </div>
+                <div class="file-previews" id="id-previews"></div>
+              </div>
+            </div>
+            <div class="form-nav"><button class="btn btn-outline" type="button" data-prev-step="3"><i class="fas fa-arrow-left"></i> Atras</button><button class="btn btn-primary" type="button" id="step-next-4">Continuar <i class="fas fa-arrow-right"></i></button></div>
+          </section>
+          <section class="form-section" id="step-5">
+            <div class="form-section-title"><i class="fas fa-list-check"></i> Revision final</div>
+            <div class="form-review-grid" id="review-summary"></div>
+            <div class="checkbox-group" style="margin-top:20px"><input type="checkbox" id="confirm-auth"><label for="confirm-auth">Confirmo que la informacion suministrada es correcta y autorizo su uso para procesar esta solicitud.</label></div>
+            <div class="form-nav"><button class="btn btn-outline" type="button" data-prev-step="4"><i class="fas fa-arrow-left"></i> Atras</button><button class="btn btn-primary" type="button" id="submit-form"><i class="fas fa-paper-plane"></i> Enviar solicitud</button></div>
+          </section>
+          <section class="form-section" id="step-6">
+            <div class="success-modal">
+              <div class="success-icon"><i class="fas fa-check"></i></div>
+              <h3 style="color:var(--white);margin-bottom:12px">Solicitud enviada</h3>
+              <p style="color:var(--gray-light)">Hemos recibido tu informacion. Guarda este numero para consultar el estado de tu caso.</p>
+              <div class="request-number"><div class="num" id="generated-number">XMI-2026-0000</div><div class="note">Numero de referencia de la solicitud</div></div>
+              <button class="btn btn-primary" type="button" data-close-modal><i class="fas fa-check-circle"></i> Cerrar</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón flotante de llamada -->
+  <a id="floating-call" class="floating-call btn btn-call" href="tel:7872052220" aria-label="Llamar ahora"><i class="fas fa-phone"></i> <span>Llamar ahora</span></a>
+
+  <script src="main.js?v=20260530b"></script>
+</body>
+</html>

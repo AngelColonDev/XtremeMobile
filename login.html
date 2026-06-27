@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso Admin | Xtreme Mobile Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="admin.css?v=20260530b">
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-left">
+      <div class="login-brand">
+        <div class="login-brand-logo">X</div>
+        <h1>Xtreme Mobile Inc.</h1>
+        <p>Panel administrativo para solicitudes, ventas, inventario y operacion diaria.</p>
+      </div>
+    </section>
+    <section class="login-right">
+      <div class="login-box">
+        <h2>Iniciar sesion</h2>
+        <p>Accede al panel para gestionar el negocio y revisar actividad en tiempo real.</p>
+        <div id="login-error" style="display:none;background:rgba(218,0,33,0.1);border:1px solid rgba(218,0,33,0.25);color:#FF8A9A;padding:12px 14px;border-radius:10px;margin-bottom:16px;font-family:var(--font-ui);"></div>
+        <form id="login-form" class="login-form">
+          <div class="fg-icon">
+            <i class="fas fa-user"></i>
+            <input class="fi" id="login-user" placeholder="Usuario">
+          </div>
+          <div class="fg-icon">
+            <i class="fas fa-lock"></i>
+            <input class="fi" id="login-pass" type="password" placeholder="Contrasena">
+            <i class="fas fa-eye fi-pass-toggle" id="pass-toggle"></i>
+          </div>
+          <button class="btn btn-primary" id="login-btn" type="submit"><i class="fas fa-sign-in-alt"></i> Iniciar sesion</button>
+        </form>
+        <div style="margin-top:12px">
+          <a class="btn btn-secondary" href="index.html" style="width:100%;justify-content:center;"><i class="fas fa-arrow-left"></i> Volver a la pagina principal</a>
+        </div>
+        <div style="margin-top:18px;text-align:center">
+          <button id="forgot-pw" type="button" style="background:none;color:var(--gray-light);font-family:var(--font-ui);font-size:14px;">Olvidaste tu contrasena?</button>
+        </div>
+        <div style="margin-top:24px;text-align:center;color:var(--gray);font-size:12px;">
+          Demo de acceso:
+          <br>
+          admin / XMI2026@Admin
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="auth.js?v=20260530b"></script>
+</body>
+</html>

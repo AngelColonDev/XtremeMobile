@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin | Xtreme Mobile Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="admin.css?v=20260530b">
+</head>
+<body>
+  <div id="admin-app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <div class="logo-mark">X</div>
+          <div class="logo-names">
+            <div class="n1">Xtreme Mobile</div>
+            <div class="n2">ADMIN PANEL</div>
+          </div>
+        </div>
+        <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Contraer menu"><i class="fas fa-bars"></i></button>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">General</div>
+        <div class="nav-item active" data-page="dashboard" data-title="Dashboard"><i class="fas fa-gauge-high"></i><span class="nav-label">Dashboard</span></div>
+        <div class="nav-item" data-page="requests" data-title="Solicitudes"><i class="fas fa-file-lines"></i><span class="nav-label">Solicitudes</span><span class="nav-badge"></span></div>
+        <div class="nav-item" data-page="inventory" data-title="Inventario"><i class="fas fa-boxes-stacked"></i><span class="nav-label">Inventario</span><span class="nav-badge"></span></div>
+        <div class="nav-item" data-page="sales" data-title="Ventas"><i class="fas fa-cash-register"></i><span class="nav-label">Ventas</span></div>
+        <div class="nav-item" data-page="stats" data-title="Estadisticas"><i class="fas fa-chart-simple"></i><span class="nav-label">Estadisticas</span></div>
+        <div class="nav-section-label">Operacion</div>
+        <div class="nav-item" data-page="suppliers" data-title="Proveedores"><i class="fas fa-truck"></i><span class="nav-label">Proveedores</span></div>
+        <div class="nav-item" data-page="employees" data-title="Empleados"><i class="fas fa-users"></i><span class="nav-label">Empleados</span></div>
+        <div class="nav-item" data-page="schedules" data-title="Horarios"><i class="fas fa-calendar-days"></i><span class="nav-label">Horarios</span></div>
+        <div class="nav-item" data-page="offers" data-title="Ofertas"><i class="fas fa-tags"></i><span class="nav-label">Ofertas</span></div>
+        <div class="nav-item" data-page="reviews" data-title="Resenas"><i class="fas fa-star"></i><span class="nav-label">Resenas</span><span class="nav-badge"></span></div>
+        <div class="nav-section-label">Sistema</div>
+        <div class="nav-item" data-page="config" data-title="Configuracion"><i class="fas fa-gear"></i><span class="nav-label">Configuracion</span></div>
+        <div class="nav-item" data-page="logs" data-title="Actividad"><i class="fas fa-clock-rotate-left"></i><span class="nav-label">Actividad</span></div>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="admin-avatar">XM</div>
+        <div class="admin-info">
+          <div class="name" id="sidebar-user-name">Administrador</div>
+          <div class="role" id="sidebar-user-role">Super Admin</div>
+        </div>
+        <button class="logout-btn" id="logout-btn" aria-label="Cerrar sesion"><i class="fas fa-right-from-bracket"></i></button>
+      </div>
+    </aside>
+    <div id="main-content">
+      <header id="topbar">
+        <div class="topbar-left">
+          <button class="topbar-btn mobile-menu-btn" id="mobile-menu-toggle" type="button" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div>
+            <div class="page-title" id="page-title">Dashboard</div>
+            <div class="breadcrumb">Xtreme Mobile Inc. / Administracion</div>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <button class="topbar-btn" type="button" aria-label="Notificaciones">
+            <i class="fas fa-bell"></i>
+            <span class="notif-dot"></span>
+          </button>
+          <div class="admin-chip">
+            <span class="dot"></span>
+            <span id="topbar-user">Administrador</span>
+          </div>
+        </div>
+      </header>
+      <main id="page-content"></main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="auth.js?v=20260530b"></script>
+  <script src="admin.js?v=20260530b"></script>
+</body>
+</html>
